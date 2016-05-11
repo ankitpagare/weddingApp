@@ -1,0 +1,64 @@
+<ion-view view-title="Welcome" style="background:#019D9E;" >
+
+  <ion-content>
+
+    <div id="">
+
+      <a class="button button-clear button-assertive" style="float:right;" href="#/login" >
+        <p id="login">Login</p>
+      </a>
+      <a class="button button-clear button-assertive" href="#/register" >
+        <p id="reg">Register</p>
+      </a>
+    </div>
+
+
+    <div>
+
+
+      <div id="serialNoEnter" >
+        <h2 class="text-center" style="margin-top:50px;">Find your perfect Wedding Vendor</h2>
+        <div class="finderform">
+        <div class="list list-inset" style="border:1px solid #4195fc; box-shadow: 0px 0px 14px #4195fc; width:100%; display: block; margin: auto;" >
+          <label class="item item-input item-select" >
+            <div class="input-label">
+              <p style="font-size:10px;">Select Vendor</p>
+            </div>
+          <select class="form-control selectpicker" name="businesscategory" required>
+            <option>Vendor Category</option>
+            <option value="Venue">Venue</option>
+            <option value="Photographer">Photographer</option>
+            <option value="Cake">Cake</option>
+            <option value="Dj">Dj</option>
+            <option value="Pandit Ji">Pandit Ji</option>
+            <option value="Catring">Catring</option>
+            <option value="Florist">Florist</option>
+            <option value="Videography">Videography</option>
+            <option value="jewellery">Jewellery</option>
+            <option value="Gifts">Gifts</option>
+            <option value="Dresses">Dresses</option>
+          </select>
+          </label>
+
+          <label class="item item-input" style="width: 385px;" >
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Select City" ng-model="serialNumber" id="serialNumberText"
+                   ng-keyup="$event.keyCode == 13 && searchSerialNumber()">
+          </label>
+        </div>
+
+        <button class="button button-block" ng-click="#/login"  ng-init="count=0"  style="width:80%; margin: auto; background-color: #04CCCD;">
+          FIND VENDER
+        </button>
+
+
+      </div>
+    </div>
+
+    </div>
+  </ion-content>
+
+
+
+
+</ion-view>
